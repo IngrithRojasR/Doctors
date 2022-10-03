@@ -1,7 +1,6 @@
 package com.doctors.repository;
 
 import com.doctors.model.DoctorModel;
-import com.doctors.repository.crudrepository.DoctorCrudRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 

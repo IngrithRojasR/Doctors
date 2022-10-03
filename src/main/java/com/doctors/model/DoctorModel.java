@@ -1,14 +1,15 @@
 package com.doctors.model;
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name="doctor")
 
-public class DoctorModel {
+public class DoctorModel implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
-    private Integer id;
+    private Integer idDoctor;
     private String name;
     private String email;
     private Integer age;
@@ -23,18 +24,18 @@ public class DoctorModel {
     }
 
     public DoctorModel(Integer id, String name, String email, Integer age) {
-        this.id = id;
+        this.idDoctor = idDoctor;
         this.name = name;
         this.email = email;
         this.age = age;
     }
 
     public Integer getId() {
-        return id;
+        return idDoctor;
     }
 
     public void setId(Integer id) {
-        this.id = id;
+        this.idDoctor = idDoctor;
     }
 
     public String getName() {
@@ -64,7 +65,7 @@ public class DoctorModel {
     @Override
     public String toString() {
         return "DoctorModel{" +
-                "id=" + id +
+                "id=" + idDoctor +
                 ", name='" + name + '\'' +
                 ", email='" + email + '\'' +
                 ", age=" + age +

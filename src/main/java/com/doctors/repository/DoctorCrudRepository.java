@@ -1,4 +1,4 @@
-package com.doctors.repository.crudrepository;
+package com.doctors.repository;
 
 import com.doctors.model.DoctorModel;
 import org.springframework.data.repository.CrudRepository;
